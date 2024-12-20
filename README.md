@@ -79,25 +79,25 @@ python dataflow.py -m ./metadata/conf.json -l ./logs/application_logs.txt
       {
         "name": "person_inputs",
         "paths": [
-          "./data/input/person/people_1.json",
-          "./data/input/person/people_2.json"
-        ],
+          "./data/input/person/"
+      ],
         "format": "JSON",
-        "schema": [
-          {"field": "name", "type": "STRING"},
-          {"field": "age", "type": "INTEGER"},
-          {"field": "office", "type": "STRING"}
-        ],
-        "options": {
-          "dropFieldIfAllNull": false
-        }
+        "schema":[
+          {"field":"name", "type":"STRING"},
+          {"field":"age", "type":"INTEGER"},
+          {"field":"office", "type":"STRING"}
+          ],
+          "options":{
+            "dropFieldIfAllNull":false
+          }
+          
       }
     ],
     "transformations": [
       {
         "name": "validation",
         "type": "validate_fields",
-        "input": "person_inputs",
+        "input" : "person_inputs",
         "params": {
           "validations": [
             {
@@ -129,6 +129,7 @@ python dataflow.py -m ./metadata/conf.json -l ./logs/application_logs.txt
       {
         "input": "person_inputs",
         "name": "ok",
+        "type": "ok",
         "paths": [
           "./data/output/ok/person"
         ],
@@ -138,6 +139,7 @@ python dataflow.py -m ./metadata/conf.json -l ./logs/application_logs.txt
       {
         "input": "person_inputs",
         "name": "ko",
+        "type": "ko",
         "paths": [
           "./data/output/ko/person"
         ],
@@ -145,7 +147,8 @@ python dataflow.py -m ./metadata/conf.json -l ./logs/application_logs.txt
         "saveMode": "OVERWRITE"
       }
     ]
-}
+  }
+  
 ```
 ## Metadata Explanation
 
@@ -188,9 +191,9 @@ The **sources** section defines the input data sources, including file paths, da
 
 - **options** (Object):
   - Additional spark configuration options reading the source data.
-  - **Example**: `{"dropFieldIfAllNull": false}`
+  - **Example**: `{"inferSchema": true}`
 
-### 2. **transformations** (Array of Objects)
+### 2. **transformations**
 The **transformations** section specifies operations to be applied to the source data, such as validation or adding new fields.
 
 - **name** (String):
@@ -236,7 +239,7 @@ The **transformations** section specifies operations to be applied to the source
         }
         ```
 
-### 3. **sinks** (Array of Objects)
+### 3. **sinks**
 The **sinks** section defines where the transformed data will be written. Each sink object includes:
 
 - **input** (String):

@@ -1,0 +1,11 @@
+{"name":"miguel","age":56,"office":"","validation_errors":"[notEmpty: office must not be empty]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"name":"ricardio","office":"murcia","validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}
+{"validation_errors":"[notNull: age must not be null]","dt":"2024-12-20T11:51:03.698+01:00"}

@@ -1,0 +1,5 @@
+{"name":"xavier","age":32}
+{"name":"miguel","age":12,"office":"santander"}
+{"age":56,"office":"murcia"}
+{"name":"miguel",age:,"office":""}
+{"name":"ricardio","age":null"office":"murcia"}

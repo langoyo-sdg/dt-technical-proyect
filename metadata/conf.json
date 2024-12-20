@@ -1,0 +1,76 @@
+{
+    "name": "prueba-acceso",
+    "sources": [
+      {
+        "name": "person_inputs",
+        "paths": [
+          "./data/input/person/"
+      ],
+        "format": "JSON",
+        "schema":[
+          {"field":"name", "type":"STRING"},
+          {"field":"age", "type":"INTEGER"},
+          {"field":"office", "type":"STRING"}
+          ],
+          "options":{
+            "dropFieldIfAllNull":false
+          }
+          
+      }
+    ],
+    "transformations": [
+      {
+        "name": "validation",
+        "type": "validate_fields",
+        "input" : "person_inputs",
+        "params": {
+          "validations": [
+            {
+              "field": "office",
+              "validations": ["notEmpty"]
+            },
+            {
+              "field": "age",
+              "validations": ["notNull"]
+            }
+          ]
+        }
+      },
+      {
+        "name": "ok_with_date",
+        "type": "add_fields",
+        "input": "person_inputs",
+        "params": {
+          "addFields": [
+            {
+              "name": "dt",
+              "function": "current_timestamp"
+            }
+          ]
+        }
+      }
+    ],
+    "sinks": [
+      {
+        "input": "person_inputs",
+        "name": "ok",
+        "type": "ok",
+        "paths": [
+          "./data/output/ok/person"
+        ],
+        "format": "csv",
+        "saveMode": "OVERWRITE"
+      },
+      {
+        "input": "person_inputs",
+        "name": "ko",
+        "type": "ko",
+        "paths": [
+          "./data/output/ko/person"
+        ],
+        "format": "json",
+        "saveMode": "OVERWRITE"
+      }
+    ]
+  }
+  

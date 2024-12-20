@@ -1,0 +1,397 @@
+2024-12-18 12:28:34,069 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-18 12:28:34,071 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-18 12:28:35,751 - Reader - INFO - Data sources loaded successfully.
+2024-12-18 12:34:07,801 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-18 12:34:07,809 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-18 12:34:09,289 - Reader - INFO - Data sources loaded successfully.
+2024-12-18 12:34:14,075 - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-18 12:34:14,080 - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-18 12:34:15,009 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-18 12:34:15,011 - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-18 12:34:15,048 - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-18 12:34:15,051 - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: csv and save mode: OVERWRITE
+2024-12-18 12:34:15,520 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-18 12:34:15,520 - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-18 12:47:52,926 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-18 12:47:52,927 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-18 12:47:54,545 - Reader - INFO - Data sources loaded successfully.
+2024-12-18 12:47:57,855 - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-18 12:47:58,241 - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-18 12:47:58,243 - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-18 12:47:58,296 - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-18 12:47:58,298 - TransformationManager - INFO - All transformations applied successfully.
+2024-12-18 12:47:59,207 - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-18 12:47:59,210 - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-18 12:48:00,305 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-18 12:48:00,315 - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-18 12:48:00,360 - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-18 12:48:00,361 - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: csv and save mode: OVERWRITE
+2024-12-18 12:48:00,995 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-18 12:48:00,998 - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-18 13:25:12,405 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-18 13:25:12,405 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-18 13:25:14,375 - Reader - INFO - Data sources loaded successfully.
+2024-12-18 13:25:19,523 - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-18 13:25:19,805 - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-18 13:25:19,812 - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-18 13:25:19,837 - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-18 13:25:19,838 - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-18 13:25:20,447 - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-18 13:25:20,447 - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-18 13:25:21,347 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-18 13:25:21,347 - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-18 13:25:21,395 - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-18 13:25:21,395 - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: csv and save mode: OVERWRITE
+2024-12-18 13:25:22,055 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-18 13:25:22,055 - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-18 13:25:48,002 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-18 13:25:48,007 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-18 13:25:51,375 - Reader - INFO - Data sources loaded successfully.
+2024-12-18 13:25:56,015 - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-18 13:25:56,251 - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-18 13:25:56,253 - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-18 13:25:56,268 - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-18 13:25:56,268 - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-18 13:25:56,915 - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-18 13:25:56,918 - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-18 13:25:57,774 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-18 13:25:57,776 - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-18 13:25:57,825 - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-18 13:25:57,828 - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: parquet and save mode: OVERWRITE
+2024-12-18 13:25:59,609 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-18 13:25:59,611 - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-18 13:26:07,626 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-18 13:26:07,626 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-18 13:26:07,645 - Reader - INFO - Data sources loaded successfully.
+2024-12-18 13:26:07,795 - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-18 13:26:07,855 - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-18 13:26:07,855 - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-18 13:26:07,855 - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-18 13:26:07,855 - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-18 13:26:08,010 - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-18 13:26:08,011 - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-18 13:26:08,195 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-18 13:26:08,196 - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-18 13:26:08,218 - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-18 13:26:08,220 - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: xml and save mode: OVERWRITE
+2024-12-18 13:26:08,360 - Writer - ERROR - Error writing DataFrame to path './data/output/ko/person': An error occurred while calling o189.save.
+: org.apache.spark.SparkClassNotFoundException: [DATA_SOURCE_NOT_FOUND] Failed to find the data source: xml. Please find packages at `https://spark.apache.org/third-party-projects.html`.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.dataSourceNotFoundError(QueryExecutionErrors.scala:725)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:647)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSourceV2(DataSource.scala:697)
+	at org.apache.spark.sql.DataFrameWriter.lookupV2Provider(DataFrameWriter.scala:873)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:260)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: xml.DefaultSource
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$5(DataSource.scala:633)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$4(DataSource.scala:633)
+	at scala.util.Failure.orElse(Try.scala:224)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:633)
+	... 16 more
+
+2024-12-18 13:26:08,365 - Writer - ERROR - Error processing sink 'ko' for input 'person_inputs': Error writing DataFrame to path './data/output/ko/person': An error occurred while calling o189.save.
+: org.apache.spark.SparkClassNotFoundException: [DATA_SOURCE_NOT_FOUND] Failed to find the data source: xml. Please find packages at `https://spark.apache.org/third-party-projects.html`.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.dataSourceNotFoundError(QueryExecutionErrors.scala:725)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:647)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSourceV2(DataSource.scala:697)
+	at org.apache.spark.sql.DataFrameWriter.lookupV2Provider(DataFrameWriter.scala:873)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:260)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: xml.DefaultSource
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$5(DataSource.scala:633)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$4(DataSource.scala:633)
+	at scala.util.Failure.orElse(Try.scala:224)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:633)
+	... 16 more
+
+./metadata/conf.json - 2024-12-18 13:29:21,169 - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+./metadata/conf.json - 2024-12-18 13:29:21,170 - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+./metadata/conf.json - 2024-12-18 13:29:22,854 - Reader - INFO - Data sources loaded successfully.
+./metadata/conf.json - 2024-12-18 13:29:26,546 - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+./metadata/conf.json - 2024-12-18 13:29:26,899 - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+./metadata/conf.json - 2024-12-18 13:29:26,902 - AddFields - INFO - Adding current timestamp column 'dt'.
+./metadata/conf.json - 2024-12-18 13:29:26,924 - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+./metadata/conf.json - 2024-12-18 13:29:26,925 - TransformationManager - INFO - All transformations were applied successfully.
+./metadata/conf.json - 2024-12-18 13:29:28,280 - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+./metadata/conf.json - 2024-12-18 13:29:28,283 - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+./metadata/conf.json - 2024-12-18 13:29:29,769 - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+./metadata/conf.json - 2024-12-18 13:29:29,774 - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+./metadata/conf.json - 2024-12-18 13:29:29,814 - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+./metadata/conf.json - 2024-12-18 13:29:29,814 - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: xml and save mode: OVERWRITE
+./metadata/conf.json - 2024-12-18 13:29:30,114 - Writer - ERROR - Error writing DataFrame to path './data/output/ko/person': An error occurred while calling o106.save.
+: org.apache.spark.SparkClassNotFoundException: [DATA_SOURCE_NOT_FOUND] Failed to find the data source: xml. Please find packages at `https://spark.apache.org/third-party-projects.html`.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.dataSourceNotFoundError(QueryExecutionErrors.scala:725)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:647)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSourceV2(DataSource.scala:697)
+	at org.apache.spark.sql.DataFrameWriter.lookupV2Provider(DataFrameWriter.scala:873)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:260)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: xml.DefaultSource
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$5(DataSource.scala:633)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$4(DataSource.scala:633)
+	at scala.util.Failure.orElse(Try.scala:224)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:633)
+	... 16 more
+
+./metadata/conf.json - 2024-12-18 13:29:30,114 - Writer - ERROR - Error processing sink 'ko' for input 'person_inputs': Error writing DataFrame to path './data/output/ko/person': An error occurred while calling o106.save.
+: org.apache.spark.SparkClassNotFoundException: [DATA_SOURCE_NOT_FOUND] Failed to find the data source: xml. Please find packages at `https://spark.apache.org/third-party-projects.html`.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.dataSourceNotFoundError(QueryExecutionErrors.scala:725)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:647)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSourceV2(DataSource.scala:697)
+	at org.apache.spark.sql.DataFrameWriter.lookupV2Provider(DataFrameWriter.scala:873)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:260)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: xml.DefaultSource
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$5(DataSource.scala:633)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$4(DataSource.scala:633)
+	at scala.util.Failure.orElse(Try.scala:224)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:633)
+	... 16 more
+
+2024-12-19 09:35:14,240 - .\metadata\conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-19 09:35:14,241 - .\metadata\conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-19 09:35:16,120 - .\metadata\conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-19 09:35:16,120 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-19 09:35:16,316 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-19 09:35:16,316 - .\metadata\conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-19 09:35:16,334 - .\metadata\conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-19 09:35:16,334 - .\metadata\conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-19 09:35:16,400 - .\metadata\conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-19 09:35:16,400 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-19 09:35:18,463 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-19 09:35:18,463 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-19 09:35:18,500 - .\metadata\conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-19 09:35:18,500 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-19 09:35:18,792 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-19 09:35:18,792 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-19 09:35:18,804 - .\metadata\conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 09:23:21,436 - .\metadata\conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 09:23:21,436 - .\metadata\conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 09:23:23,386 - .\metadata\conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 09:23:23,386 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 09:23:23,626 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 09:23:23,626 - .\metadata\conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 09:23:23,626 - .\metadata\conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 09:23:23,626 - .\metadata\conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 09:23:23,703 - .\metadata\conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 09:23:23,711 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 09:23:25,785 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 09:23:25,785 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 09:23:25,824 - .\metadata\conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 09:23:25,825 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 09:23:26,153 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 09:23:26,153 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 09:23:26,165 - .\metadata\conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 10:07:16,390 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:07:16,392 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:07:18,951 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:07:23,621 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:07:23,877 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:07:23,881 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:07:23,891 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:07:23,891 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:07:24,521 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:07:24,531 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:07:25,332 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:07:25,336 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:07:25,371 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:07:25,386 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:07:25,941 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:07:25,941 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:07:43,423 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:07:43,423 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:07:43,456 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:07:43,577 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:07:43,661 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:07:43,661 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:07:43,673 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:07:43,675 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:07:43,888 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:07:43,892 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:07:44,120 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:07:44,120 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:07:44,141 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:07:44,144 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:07:44,371 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:07:44,371 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:07:48,181 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:07:48,181 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:07:48,214 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:07:48,401 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:07:48,462 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:07:48,462 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:07:48,475 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:07:48,475 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:07:48,651 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:07:48,663 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:07:48,859 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:07:48,861 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:07:48,881 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:07:48,885 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:07:49,103 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:07:49,103 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:08:03,920 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:08:03,920 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:08:06,903 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:08:11,242 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:08:11,470 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:08:11,470 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:08:11,483 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:08:11,483 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:08:12,165 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:08:12,175 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:08:13,015 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:08:13,015 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:08:13,062 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:08:13,065 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:08:13,470 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:08:13,476 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:14:46,556 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:14:46,556 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:14:48,452 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:20:09,245 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:20:09,247 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:20:11,050 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:20:14,112 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:20:14,351 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:20:14,351 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:20:14,366 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:20:14,369 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:20:14,861 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:20:14,869 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:20:15,309 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:20:15,311 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:20:15,335 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:20:15,337 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:20:15,582 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:20:15,582 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:25:48,467 - .\metadata\conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:25:48,467 - .\metadata\conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:25:50,466 - .\metadata\conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:25:50,466 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:25:50,706 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:25:50,706 - .\metadata\conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:25:50,718 - .\metadata\conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:25:50,718 - .\metadata\conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:25:50,796 - .\metadata\conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:25:50,800 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:25:53,110 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:25:53,110 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:25:53,143 - .\metadata\conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:25:53,146 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:25:53,483 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:25:53,483 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:25:53,493 - .\metadata\conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 10:39:44,852 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:39:44,855 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:39:47,082 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:39:54,512 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:39:54,962 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:39:54,972 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:39:55,007 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:39:55,012 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:39:55,955 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:39:55,968 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:39:57,223 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:39:57,232 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:39:57,292 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:39:57,296 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:39:58,054 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:39:58,054 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 10:41:39,142 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 10:41:39,142 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 10:41:39,212 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 10:41:39,362 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 10:41:39,449 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 10:41:39,450 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 10:41:39,452 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 10:41:39,452 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 10:41:39,665 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 10:41:39,672 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 10:41:39,871 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 10:41:39,878 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 10:41:39,904 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 10:41:39,912 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 10:41:40,132 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 10:41:40,134 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 11:50:58,528 - .\metadata\conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 11:50:58,528 - .\metadata\conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 11:51:00,328 - .\metadata\conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 11:51:00,328 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 11:51:00,568 - .\metadata\conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 11:51:00,568 - .\metadata\conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 11:51:00,579 - .\metadata\conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 11:51:00,579 - .\metadata\conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 11:51:00,642 - .\metadata\conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 11:51:00,644 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 11:51:03,621 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 11:51:03,621 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 11:51:03,671 - .\metadata\conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 11:51:03,674 - .\metadata\conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 11:51:04,418 - .\metadata\conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 11:51:04,418 - .\metadata\conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 11:51:04,447 - .\metadata\conf.json - py4j.clientserver - INFO - Closing down clientserver connection

@@ -1,0 +1,41 @@
+2024-12-19 13:38:39,857 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-19 13:38:39,857 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-19 13:38:41,420 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-19 13:38:41,420 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-19 13:38:41,613 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-19 13:38:41,613 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-19 13:38:41,624 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-19 13:38:41,624 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-19 13:38:41,694 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-19 13:38:41,703 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-19 13:38:44,086 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-19 13:38:44,086 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-19 13:38:44,123 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-19 13:38:44,128 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-19 13:38:44,636 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-19 13:38:44,636 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-19 13:38:44,663 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:10:26,109 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:28:41,601 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:38:38,348 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:40:19,194 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:41:04,661 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:41:20,993 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:42:15,165 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
+2024-12-20 11:50:04,200 - ./metadata/conf.json - Reader - INFO - Schema conversion successful: StructType([StructField('name', StringType(), nullable=True),StructField('age', IntegerType(), nullable=True),StructField('office', StringType(), nullable=True)])
+2024-12-20 11:50:04,201 - ./metadata/conf.json - Reader - INFO - Options rertrieved: {'dropFieldIfAllNull': False}
+2024-12-20 11:50:06,786 - ./metadata/conf.json - Reader - INFO - Data sources loaded successfully.
+2024-12-20 11:50:06,786 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: validate_fields with params: {'validations': [{'field': 'office', 'validations': ['notEmpty']}, {'field': 'age', 'validations': ['notNull']}]}
+2024-12-20 11:50:07,106 - ./metadata/conf.json - TransformationManager - INFO - Applying transformation: add_fields with params: {'addFields': [{'name': 'dt', 'function': 'current_timestamp'}]}
+2024-12-20 11:50:07,107 - ./metadata/conf.json - AddFields - INFO - Adding current timestamp column 'dt'.
+2024-12-20 11:50:07,148 - ./metadata/conf.json - AddFields - INFO - Added field 'dt' with function 'current_timestamp'.
+2024-12-20 11:50:07,149 - ./metadata/conf.json - TransformationManager - INFO - All transformations were applied successfully.
+2024-12-20 11:50:07,224 - ./metadata/conf.json - Writer - INFO - Processing sink 'ok' for input 'person_inputs'.
+2024-12-20 11:50:07,228 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ok/person with format: csv and save mode: OVERWRITE
+2024-12-20 11:50:10,318 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ok/person
+2024-12-20 11:50:10,318 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ok' for input 'person_inputs'.
+2024-12-20 11:50:10,359 - ./metadata/conf.json - Writer - INFO - Processing sink 'ko' for input 'person_inputs'.
+2024-12-20 11:50:10,359 - ./metadata/conf.json - Writer - INFO - Writing DataFrame to path: ./data/output/ko/person with format: json and save mode: OVERWRITE
+2024-12-20 11:50:10,899 - ./metadata/conf.json - Writer - INFO - Successfully wrote DataFrame to path: ./data/output/ko/person
+2024-12-20 11:50:10,899 - ./metadata/conf.json - Writer - INFO - Successfully processed sink 'ko' for input 'person_inputs'.
+2024-12-20 11:50:10,918 - ./metadata/conf.json - py4j.clientserver - INFO - Closing down clientserver connection
